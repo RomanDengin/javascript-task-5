@@ -15,20 +15,6 @@ var subscriptionTypes = {
 
 var subscribers = [];
 
-/* function equalListOfEvents(eventsList1, eventsList2) {
-    if (eventsList1.length !== eventsList2.length) {
-        return false;
-    }
-    for (var i = 0; i < eventsList1.length; i++) {
-        if (eventsList1[i] !== eventsList2[i]) {
-
-            return false;
-        }
-    }
-
-    return true;
-}
-*/
 function processEvents(event) {
     switch (event.type) {
         case subscriptionTypes.on:
