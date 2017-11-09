@@ -113,8 +113,7 @@ function getEmitter() {
         emit: function (event) {
             var rEvents = listOfRightEvens(event);
             for (var i = 0; i < rEvents.length; i++) {
-                var ev = rEvents[i];
-                proecessOneOfRightEvent(ev);
+                proecessOneOfRightEvent(rEvents[i]);
             }
 
             return this;
